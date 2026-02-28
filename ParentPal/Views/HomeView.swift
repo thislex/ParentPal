@@ -10,7 +10,7 @@ import SwiftData
 
 // MARK: - ActivityType View Helpers
 
-private extension ActivityType {
+extension ActivityType {
     /// SF Symbol name representing each activity type.
     var icon: String {
         switch self {
@@ -63,11 +63,8 @@ struct HomeView: View {
                     }
                 }
             }
-            // Placeholder sheet — replaced by AddActivityView when built
             .sheet(isPresented: $showingAddActivity) {
-                Text("Add Activity — Coming Soon")
-                    .font(.headline)
-                    .padding()
+                AddActivityView()
             }
         }
     }
