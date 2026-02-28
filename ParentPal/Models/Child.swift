@@ -1,4 +1,4 @@
-git//
+//
 //  Child.swift
 //  ParentPal
 //
